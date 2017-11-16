@@ -5,9 +5,11 @@ import { CategoriesComponent } from './categories.component';
 import { CategoryDetailComponent } from './detail/category-detail.component';
 
 const routes: Routes = [
-    {path: 'categories', component: CategoriesComponent, 
+    {path: 'categories',
         children: [
-        {path: ':id', component: CategoryDetailComponent}, 
+            {path: '', redirectTo: 'list', pathMatch: 'full'},
+            {path: 'list', component: CategoriesComponent}, 
+            {path: ':id', component: CategoryDetailComponent}, 
         ]
     }
 ];

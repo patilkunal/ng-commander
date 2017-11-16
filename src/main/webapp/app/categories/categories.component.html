@@ -1,5 +1,10 @@
 <p>
   categories List works!
 </p>
-<button class="btn" [routerLink]="['./1']">Sample Category detail</button>
-<router-outlet></router-outlet>
+<table class="table">
+  <tr><th>Name</th></tr>
+  <tr *ngFor="let cat of categories">
+    <td>{{cat.name}}</td>
+  </tr>
+</table>
+<button class="btn btn-primary" [routerLink]="['../1']">Sample Category detail</button>

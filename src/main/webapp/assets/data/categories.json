@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "CSL",
+        "description": "CSL Category"
+    },
+    {
+        "id": 2,
+        "name": "SAS",
+        "description": "SAS Category"
+    }
+]

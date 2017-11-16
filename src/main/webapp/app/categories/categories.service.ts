@@ -1,19 +1,20 @@
 import { Injectable } from '@angular/core';
+import {Observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+
+import {Category} from '../shared/category';
 
 @Injectable()
-export class Category {
-    constructor(public id: number, public name: string, public description: string) {
-
-    }
-}
-
 export class CategoriesService {
 
-    getCategories() {
+    constructor(private httpClient: HttpClient) {
 
     }
+    getCategories(): Observable<Category[]> {
+        return this.httpClient.get('/assets/data/categories.json');
+    }
 
-    getCategory(id: number) {
-
+    getCategory(id: number): Observable<Category> {
+        return this.httpClient.get('/assets/data/category.json');
     }
 }

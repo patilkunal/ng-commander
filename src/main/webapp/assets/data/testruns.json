@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "testCase": {
+            "id" : 1,
+            "name" : "TestCase 1"
+        },
+        "host" : {
+            "id": 1,
+            "name": "Host 1",
+            "hostName": "10.0.0.1",
+            "port": 80,
+            "ssl": false
+        }
+
+    }
+]
