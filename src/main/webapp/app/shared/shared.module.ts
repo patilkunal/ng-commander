@@ -8,11 +8,12 @@ import {Host} from './host';
 
 import {TestRunService} from './test-run.service';
 import {HostService} from './host.service';
+import {ErrorHandlerService} from './error-handler.service';
 
 @NgModule({
     imports: [HttpClientModule],
     exports: [],
-    providers:[TestRunService, HostService]
+    providers:[TestRunService, HostService, ErrorHandlerService]
 })
 export class SharedModule {
 

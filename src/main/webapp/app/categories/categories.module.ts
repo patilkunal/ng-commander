@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { CategoriesComponent } from './categories.component';
 import { CategoryDetailComponent } from './detail/category-detail.component';
@@ -8,7 +9,7 @@ import { CategoriesRoutingModule } from './categories-routing.module';
 
 @NgModule({
   //imports only accept NgModules
-  imports: [CommonModule, CategoriesRoutingModule],
+  imports: [CommonModule, CategoriesRoutingModule, FormsModule],
   //declaration only accept component, pipe or directive
   declarations: [
     CategoriesComponent,

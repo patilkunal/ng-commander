@@ -2,11 +2,19 @@
     {
         "id": 1,
         "name": "CSL",
-        "description": "CSL Category"
+        "description": "CSL Category",
+        "testCount": 2
     },
     {
         "id": 2,
         "name": "SAS",
-        "description": "SAS Category"
+        "description": "SAS Category",
+        "testCount": 4
+    },
+    {
+        "id": 2,
+        "name": "No Test Category",
+        "description": "Category with no tests",
+        "testCount": 0
     }
 ]

@@ -3,3 +3,20 @@
 <p>
     Category detail
 </p>
+
+<form class="form-horizontal" #compDetailForm="ngForm">
+    <div class="form-group">
+        <label for="name" class="control-label col-sm-2">Name</label>
+        <input type="text" class="form-control col-sm-10" required id="name" placeholder="Category name" [(ngModel)]="category.name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="description" class="control-label col-sm-2">Description</label>
+        <input type="text" class="form-control col-sm-10" id="description" placeholder="Category description" name="description" [(ngModel)]="category.description">
+    </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button class="btn btn-primary" (click)="save()" name="save" [disabled]="!compDetailForm.form.valid">Save</button>
+      <button class="btn btn-default" (click)="cancel()" name="cancel">Cancel</button>
+    </div>
+  </div>    
+</form>

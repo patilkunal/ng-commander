@@ -1,10 +1,15 @@
 <p>
-  categories List works!
+  Category List
 </p>
-<table class="table">
-  <tr><th>Name</th></tr>
+<table class="table table-bordered table-condensed">
+  <tr><th>Name</th><th>Test Count</th><th>Actions</th></tr>
   <tr *ngFor="let cat of categories">
     <td>{{cat.name}}</td>
+    <td>{{cat.testCount}}</td>
+    <td style="text-align: right">
+        <button class="btn btn-primary" [routerLink]="['../' + cat.id]">Edit</button>
+        <button class="btn btn-default" (click)="deleteCategory()" [disabled]="cat.testCount > 0">Delete</button>
+    </td>
   </tr>
 </table>
-<button class="btn btn-primary" [routerLink]="['../1']">Sample Category detail</button>
+
