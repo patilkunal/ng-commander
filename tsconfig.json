@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./target/ng-commander/dist/out-tsc",
+    "outDir": "./target/ngapp/dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
