@@ -19,6 +19,7 @@ import { CategoriesRoutingModule } from './categories-routing.module';
   //Export what you want to make visible outside
   //No need to export CategoriesComponent since we are providing the routing
   exports: [],
+  //register category service and resolver as provider
   providers: [CategoriesService, CategoryResolve]
 })
 export class CategoriesModule {

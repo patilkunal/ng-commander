@@ -21,6 +21,7 @@ export class CategoryDetailComponent implements OnInit {
   constructor(private actRoute: ActivatedRoute, private router: Router, private service: CategoriesService, private errorHandler: ErrorHandlerService) {  }
 
   ngOnInit() {
+    console.log(this.actRoute);
     //we get category data from the resolver
     this.category = this.actRoute.snapshot.data['category'];
   }

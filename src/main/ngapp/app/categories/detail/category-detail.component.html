@@ -1,8 +1,12 @@
 <button class="btn btn-primary" [routerLink]="['../list']">Back to List</button>
 
-<p>
-    Category detail
+<p *ngIf="category.id > -1">
+    Edit Category
 </p>
+<p *ngIf="category.id == -1">
+    Create New Category
+</p>
+
 
 <form class="form-horizontal" #compDetailForm="ngForm">
     <div class="form-group">

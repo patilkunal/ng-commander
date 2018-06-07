@@ -1,6 +1,7 @@
 <p>
   Category List
 </p>
+<button class="btn btn-default" [routerLink]="['../new']">New Category</button>
 <table class="table table-bordered table-condensed">
   <tr><th>Name</th><th>Test Count</th><th>Actions</th></tr>
   <tr *ngFor="let cat of categories">
