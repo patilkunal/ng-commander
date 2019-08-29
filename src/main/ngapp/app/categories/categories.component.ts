@@ -21,7 +21,8 @@ export class CategoriesComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.categoriesSub = this.service.getCategories()
               .subscribe((data) => { this.categories = data },
-              (err) => this.errorHandler.handleHttpError(err)
+              (err) => this.errorHandler.handleHttpError(err),
+              () => console.log("Categories get complete")
             );
   }
 
